@@ -9,12 +9,14 @@ main {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-top: 50px;
 }
 
 #logo {
     display: block;
-    width: 250px;
-    margin: 0 auto;
+    width: 20vw;
+    max-width: 250px;
+    margin: 25px auto;
 }
 
 #searchbar {
@@ -23,36 +25,81 @@ main {
     border: 1px solid #dfe1e5;
     font-size: 16px;
     border-radius: 30px;
+    margin-bottom: 25px;
 }
 
-nav {
+nav, footer {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
 }
 
-nav ul {
+nav ul, footer ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    align-content: center;
 }
 
-nav li {
-    width: 50px;
+nav li, footer li {
     text-align: center;
-    padding: 20px 0;
+    opacity: 0.75;
+    margin-left: 20px;
 }
 
-nav li:hover {
+.first-item {
+   
+}
+
+#nav-boxes {
+    width: 22px;
+    height: 22px;
+    opacity: 0.75;
+}
+
+#profile-container {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(https://images.pexels.com/photos/148182/pexels-photo-148182.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5px;
+}
+
+#profile-icon {
+    width: 50px;
+}
+
+.last-item {
+    margin-right: 20px;
+}
+
+nav li:hover, footer li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-#nav-buttons-1 {
-    align-self: flex-start;
+button {
+    border: none;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin: 0 5px;
 }
 
-#nav-buttons-2 {
-    align-self: flex-start;
+nav {
+    padding: 20px 0;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 12px 0;
+    border-top: 1px solid #dadce0;
+}
+
