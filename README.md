@@ -1,0 +1,1 @@
+This is Shea's Google homepage project for The Odin Project.
